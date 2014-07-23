@@ -1,4 +1,4 @@
-GoPro-Black-3Plus-Firmware-Analysis
+GoPro Black 3 Plus Firmware Analysis
 ===================================
 
 Analysis and findings on GoPro Black 3 Plus Firmware

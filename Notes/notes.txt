@@ -1,0 +1,103 @@
+
+
+/bin # ls
+addgroup       date           fsync          iprule         more           ps             stat
+adduser        dd             getopt         iptunnel       mount          pwd            stty
+ash            delgroup       grep           kill           mountpoint     reformime      su
+base64         deluser        gunzip         linux32        mpstat         rev            sync
+busybox        df             gzip           linux64        mt             rm             tar
+cat            dmesg          hostname       ln             mv             rmdir          touch
+catv           dnsdomainname  hush           login          netstat        rpm            true
+chattr         dumpkmap       ionice         ls             nice           run-parts      umount
+chgrp          echo           iostat         lsattr         pidof          scriptreplay   uname
+chmod          ed             ip             lzop           ping           sed            usleep
+chown          egrep          ipaddr         makemime       ping6          setarch        vi
+cp             false          ipcalc         mkdir          pipe_progress  setserial      watch
+cpio           fdflush        iplink         mknod          powertop       sh             zcat
+cttyhack       fgrep          iproute        mktemp         printenv       sleep
+
+=========================
+
+
+/bin # ps -A
+PID   USER     TIME   COMMAND
+    1 root       0:04 init
+    2 root       0:00 [kthreadd]
+    3 root       0:00 [ksoftirqd/0]
+    4 root       0:00 [kworker/0:0]
+    5 root       0:00 [kworker/u:0]
+    6 root       0:00 [khelper]
+    7 root       0:00 [kworker/u:1]
+  430 root       0:00 [sync_supers]
+  432 root       0:00 [bdi-default]
+  434 root       0:00 [kblockd]
+  435 root       0:00 [ipc_bh 0]
+  436 root       0:00 [ipc_bh 1]
+  529 root       0:00 [rpciod]
+  530 root       0:00 [kworker/0:1]
+  539 root       0:00 [kswapd0]
+  540 root       0:00 [fsnotify_mark]
+  541 root       0:00 [aio]
+  542 root       0:00 [nfsiod]
+  545 root       0:00 [crypto]
+  589 root       0:00 [mtdblock0]
+  594 root       0:00 [mtdblock1]
+  599 root       0:00 [mtdblock2]
+  604 root       0:00 [mtdblock3]
+  609 root       0:00 [mtdblock4]
+  614 root       0:00 [mtdblock5]
+  619 root       0:00 [mtdblock6]
+  624 root       0:00 [mtdblock7]
+  629 root       0:00 [mtdblock8]
+  634 root       0:00 [mtdblock9]
+  639 root       0:00 [mtdblock10]
+  644 root       0:00 [mtdblock11]
+  649 root       0:00 [mtdblock12]
+  654 root       0:00 [mtdblock13]
+  659 root       0:00 [mtdblock14]
+  664 root       0:00 [mtdblock15]
+  669 root       0:00 [mtdblock16]
+  700 root       0:00 [l2cap]
+  701 root       0:00 [krfcommd]
+  702 root       0:00 [lkvfs_bh 0]
+  747 root       0:00 vffs /tmp/fuse_a -l a -C 1 -o big_writes -s
+  750 root       0:00 vffs /tmp/fuse_d -l d -C 1 -o big_writes -s
+  753 root       0:00 vffs /tmp/fuse -l f -s
+  756 root       0:00 ombra
+  758 root       0:00 amba_mq_handler
+  762 root       0:00 network_message_daemon
+  767 root       0:05 /usr/bin/lu_lnxfio_stream
+  771 root       0:00 /usr/bin/lu_smarty -d
+  776 root       0:00 -/bin/sh
+  788 root       0:00 [flush-0:19]
+  789 root       0:00 [flush-0:20]
+  790 root       0:00 [flush-0:21]
+  791 root       0:00 [ubi_bgt0d]
+  797 root       0:00 [ubifs_bgt0_1]
+  815 root       0:00 [kworker/0:2]
+  838 root       0:00 telnetd -l /bin/sh -p 80
+  841 root       0:00 /bin/sh
+  847 root       0:00 ps -A
+
+========================================
+
+/sbin # ls
+acpid              getty              iwspy              mkswap             sulogin
+adjtimex           halt               klogd              modinfo            swapoff
+arp                hdparm             loadkmap           modprobe           swapon
+blkid              hwclock            logread            nameif             switch_root
+blockdev           ifconfig           losetup            pivot_root         sysctl
+bootchartd         ifdown             lsmod              poweroff           syslogd
+depmod             ifenslave          makedevs           raidautorun        tunctl
+devmem             ifup               man                reboot             udhcpc
+fbsplash           init               mdev               rmmod              vconfig
+fdisk              insmod             mkdosfs            route              watchdog
+findfs             iwconfig           mke2fs             runlevel           zcip
+freeramdisk        iwgetid            mkfs.ext2          setconsole
+fsck               iwlist             mkfs.minix         slattach
+fsck.minix         iwpriv             mkfs.vfat          start-stop-daemon
+
+=========================
+
+
+
