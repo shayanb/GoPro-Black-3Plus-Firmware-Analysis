@@ -1,0 +1,29 @@
+./fwunpacker ./HD3.11-firmware.bin 
+
+Saving section 0 to section_0 at offset 98560 len 2048 CRC 0x32bb89cb
+Saving section 1 to section_1 at offset 102656 len 162656 CRC 0x7bc42794
+Saving section 2 to section_2 at offset 266496 len 47356 CRC 0x2ea32e5b
+Saving section 3 to section_3 at offset 315648 len 8241156 CRC 0xd6483889
+Saving section 4 to section_4 at offset 8558848 len 4940804 CRC 0x6a37f443
+Saving section 5 to section_5 at offset 13500672 len 12720128 CRC 0x5e8846e7
+Saving section 6 to section_6 at offset 26222848 len 3524776 CRC 0xdac3d4bc
+Saving section 7 to section_7 at offset 29749504 len 14680064 CRC 0x2417528e
+Saving section 8 to section_8 at offset 44431616 len 1024 CRC 0xefb5af2e
+
+
+
+Based on evilwombat and https://gist.github.com/cr3ative/8340001
+
+Section     Size   Guess on what it is
+---------   ----   -------------------
+section_0   2.0K   BST bootloader - sets up DDR and friends
+section_1   151K   AMBoot bootloader - loads other things
+section_2    58K   HAL - a set of chip-specific APIs ??
+section_3   5.9M   Main camera software - RTOS image
+section_4   4.7M   Linux kernel
+section_5    10M   ROMFS for main camera software
+section_6   2.6M   DSP image ??
+section_7    29M   rootfs for Linux (ubifs)
+section_8   1.0K   Blank (for storing preferences??)
+
+
