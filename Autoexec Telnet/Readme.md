@@ -14,8 +14,11 @@ Then on the computer, connect to GoPro's wifi and run the following:
 
 you should see something like this:
 > sbeta$ telnet 10.5.5.9 8080
->Trying 10.5.5.9...
->Connected to 10.5.5.9.
->Escape character is '^]'.
 
->/ #  
+> Trying 10.5.5.9...
+
+> Connected to 10.5.5.9.
+
+> Escape character is '^]'.
+
+> / #  
