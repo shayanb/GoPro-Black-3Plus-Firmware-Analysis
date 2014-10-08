@@ -1,0 +1,98 @@
+name         : stdrng
+driver       : ansi_cprng
+module       : kernel
+priority     : 100
+refcnt       : 1
+selftest     : passed
+type         : rng
+seedsize     : 48
+
+name         : stdrng
+driver       : krng
+module       : kernel
+priority     : 200
+refcnt       : 1
+selftest     : passed
+type         : rng
+seedsize     : 0
+
+name         : lzo
+driver       : lzo-generic
+module       : kernel
+priority     : 0
+refcnt       : 2
+selftest     : passed
+type         : compression
+
+name         : deflate
+driver       : deflate-generic
+module       : kernel
+priority     : 0
+refcnt       : 2
+selftest     : passed
+type         : compression
+
+name         : arc4
+driver       : arc4-generic
+module       : kernel
+priority     : 0
+refcnt       : 1
+selftest     : passed
+type         : cipher
+blocksize    : 1
+min keysize  : 1
+max keysize  : 256
+
+name         : aes
+driver       : aes-generic
+module       : kernel
+priority     : 100
+refcnt       : 1
+selftest     : passed
+type         : cipher
+blocksize    : 16
+min keysize  : 16
+max keysize  : 32
+
+name         : des3_ede
+driver       : des3_ede-generic
+module       : kernel
+priority     : 0
+refcnt       : 1
+selftest     : passed
+type         : cipher
+blocksize    : 8
+min keysize  : 24
+max keysize  : 24
+
+name         : des
+driver       : des-generic
+module       : kernel
+priority     : 0
+refcnt       : 1
+selftest     : passed
+type         : cipher
+blocksize    : 8
+min keysize  : 8
+max keysize  : 8
+
+name         : md5
+driver       : md5-generic
+module       : kernel
+priority     : 0
+refcnt       : 1
+selftest     : passed
+type         : shash
+blocksize    : 64
+digestsize   : 16
+
+name         : md4
+driver       : md4-generic
+module       : kernel
+priority     : 0
+refcnt       : 1
+selftest     : passed
+type         : shash
+blocksize    : 64
+digestsize   : 16
+
